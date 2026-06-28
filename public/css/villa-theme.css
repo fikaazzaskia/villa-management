@@ -1,0 +1,179 @@
+:root {
+    --wild-berry: #330511;
+    --cool-mist: #BDC5CF;
+    --soft-rose: #E7DAD4;
+    --ivory-cream: #F8F8EC;
+    --powder-grey: #DFE3EA;
+    --warm-oat: #E3E0CF;
+}
+
+body {
+    background-color: var(--ivory-cream);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--wild-berry);
+}
+
+/* Navbar */
+.navbar-villa {
+    background: linear-gradient(135deg, var(--wild-berry), #4a0a1c);
+    padding: 1rem 0;
+}
+.navbar-brand-villa {
+    color: var(--ivory-cream) !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.nav-link-villa {
+    color: var(--soft-rose) !important;
+    transition: 0.25s;
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem !important;
+}
+.nav-link-villa:hover, .nav-link-villa.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff !important;
+}
+
+/* Buttons */
+.btn-villa-primary {
+    background-color: var(--wild-berry);
+    color: #fff;
+    border: none;
+    transition: 0.25s;
+}
+.btn-villa-primary:hover {
+    background-color: #4a0a1c;
+    color: #fff;
+}
+.btn-villa-secondary {
+    background-color: var(--cool-mist);
+    color: var(--wild-berry);
+    border: none;
+}
+.btn-villa-secondary:hover {
+    background-color: #a9b3bf;
+    color: var(--wild-berry);
+}
+.btn-villa-accent {
+    background-color: var(--warm-oat);
+    color: var(--wild-berry);
+    border: none;
+}
+.btn-villa-accent:hover { background-color: #d4d0b8; }
+
+/* Auth */
+.auth-bg {
+    background: linear-gradient(135deg, var(--wild-berry) 0%, var(--soft-rose) 100%);
+}
+.auth-card {
+    background: var(--ivory-cream);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 420px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+.auth-icon { font-size: 3rem; color: var(--wild-berry); }
+
+.alert-villa-success { background-color: #d8efe1; color: #1f6b3f; border: none; border-radius: 10px; padding: 0.9rem; }
+.alert-villa-danger { background-color: #f6dada; color: var(--wild-berry); border: none; border-radius: 10px; padding: 0.9rem; }
+
+/* Villa cards */
+.villa-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(51,5,17,0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+    position: relative;
+    height: 100%;
+}
+.villa-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(51,5,17,0.18);
+}
+.villa-card-img { width: 100%; height: 200px; object-fit: cover; }
+.villa-card-body { padding: 1.2rem; }
+.villa-price { font-size: 1.2rem; font-weight: 700; color: var(--wild-berry); }
+
+.badge-tipe {
+    position: absolute; top: 12px; right: 12px;
+    padding: 0.3rem 0.8rem; border-radius: 20px;
+    font-size: 0.75rem; font-weight: 600; color: #fff;
+}
+.badge-standard { background-color: var(--cool-mist); color: var(--wild-berry); }
+.badge-deluxe { background-color: var(--warm-oat); color: var(--wild-berry); }
+.badge-premium { background-color: var(--wild-berry); }
+
+.badge-fasilitas {
+    background-color: var(--powder-grey);
+    color: var(--wild-berry);
+    padding: 0.35rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Forms */
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 18px rgba(51,5,17,0.08);
+}
+
+/* Detail page */
+.detail-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 18px rgba(51,5,17,0.08); }
+.detail-img { width: 100%; height: 100%; min-height: 320px; object-fit: cover; }
+
+/* Stats / Dashboard */
+.glass-panel {
+    background: rgba(255,255,255,0.7);
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+}
+.stat-number { font-size: 2.2rem; font-weight: 700; color: var(--wild-berry); }
+.stat-label { color: #6b6b6b; }
+
+.hero-section {
+    background: linear-gradient(135deg, var(--wild-berry), #5a1428);
+    color: #fff;
+    padding: 4rem 0 6rem;
+}
+.hero-title { font-size: 2.2rem; font-weight: 700; }
+.hero-subtitle { color: var(--soft-rose); }
+
+.dashboard-card {
+    display: block;
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.8rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--wild-berry);
+    box-shadow: 0 4px 18px rgba(51,5,17,0.08);
+    transition: 0.25s;
+}
+.dashboard-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(51,5,17,0.18); color: var(--wild-berry); }
+.dashboard-card .icon-img { width: 56px; height: 56px; object-fit: contain; margin-bottom: 0.6rem; }
+
+.footer-villa {
+    background: var(--wild-berry);
+    color: var(--soft-rose);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* Tables */
+.table-villa thead { background-color: var(--wild-berry); color: #fff; }
+.table-villa tbody tr:hover { background-color: var(--soft-rose); }
+
+.badge-status { padding: 0.3rem 0.7rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+.status-pending { background-color: #fdf0d5; color: #a86a00; }
+.status-konfirmasi { background-color: #d8efe1; color: #1f6b3f; }
+.status-selesai { background-color: var(--cool-mist); color: var(--wild-berry); }
+.status-batal { background-color: #f6dada; color: var(--wild-berry); }
+
+.gallery-thumb { position: relative; border-radius: 14px; overflow: hidden; height: 220px; }
+.gallery-img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-play-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; font-size: 2.5rem; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
